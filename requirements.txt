@@ -1,0 +1,10 @@
+# Stage 1 (K-Means + TSP) requires only the Python standard library.
+# The dependencies below are needed only for Stage 2 and Stage 3 MILPs.
+
+# Install ONE of the following mixed-integer programming solvers:
+gurobipy>=11.0        # requires a Gurobi licence (free academic licence available)
+# ortools>=9.7        # alternative open-source solver (uncomment to use)
+
+# Optional utilities for saving results and generating charts
+openpyxl>=3.1
+matplotlib>=3.7

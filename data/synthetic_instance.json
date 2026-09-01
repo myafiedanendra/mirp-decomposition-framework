@@ -1,0 +1,41 @@
+{
+  "meta": {
+    "description": "Synthetic MIRP instance for demonstration. Numbers are fictional and do not represent any real operation. Structure mirrors a bulk cement distribution problem in an archipelagic region with one origin (loading terminal) and nine consumption ports.",
+    "planning_horizon_days": 365,
+    "period_days": 2,
+    "commission_days": 350,
+    "exchange_rate_local_per_usd": 15000,
+    "fuel_price_ifo_per_ton_local": 18500,
+    "fuel_price_mdo_per_ton_local": 24000,
+    "cargo_handling_cost_per_ton_local": 700,
+    "stockout_penalty_per_ton_local": 1200000,
+    "buffer_time_pct": 0.10
+  },
+  "origin": {
+    "name": "Origin_Port",
+    "lat": -5.0,
+    "lon": 119.5,
+    "loading_rate_tph": 1500
+  },
+  "destinations": [
+    {"name": "Port_A", "lat": 1.5,  "lon": 125.2, "annual_demand_t": 70000,  "silo_capacity_t": 12000, "berth_depth_m": 10.5, "unloading_rate_tph": 300, "initial_stock_t": 2000, "holding_cost_per_ton_period_local": 700},
+    {"name": "Port_B", "lat": -2.5, "lon": 119.2, "annual_demand_t": 9000,   "silo_capacity_t": 4000,  "berth_depth_m": 10.0, "unloading_rate_tph": 300, "initial_stock_t": 400,  "holding_cost_per_ton_period_local": 700},
+    {"name": "Port_C", "lat": -0.8, "lon": 119.9, "annual_demand_t": 340000, "silo_capacity_t": 8000,  "berth_depth_m": 10.0, "unloading_rate_tph": 300, "initial_stock_t": 300,  "holding_cost_per_ton_period_local": 700},
+    {"name": "Port_D", "lat": -4.2, "lon": 122.7, "annual_demand_t": 145000, "silo_capacity_t": 12000, "berth_depth_m": 10.0, "unloading_rate_tph": 300, "initial_stock_t": 2000, "holding_cost_per_ton_period_local": 700},
+    {"name": "Port_E", "lat": -3.7, "lon": 128.2, "annual_demand_t": 12000,  "silo_capacity_t": 8000,  "berth_depth_m": 9.2,  "unloading_rate_tph": 300, "initial_stock_t": 2000, "holding_cost_per_ton_period_local": 625},
+    {"name": "Port_F", "lat": 0.7,  "lon": 127.5, "annual_demand_t": 81000,  "silo_capacity_t": 6000,  "berth_depth_m": 9.0,  "unloading_rate_tph": 300, "initial_stock_t": 725,  "holding_cost_per_ton_period_local": 625},
+    {"name": "Port_G", "lat": -8.2, "lon": 114.8, "annual_demand_t": 129000, "silo_capacity_t": 12000, "berth_depth_m": 9.6,  "unloading_rate_tph": 100, "initial_stock_t": 1000, "holding_cost_per_ton_period_local": 620},
+    {"name": "Port_H", "lat": -8.7, "lon": 116.1, "annual_demand_t": 61000,  "silo_capacity_t": 5000,  "berth_depth_m": 11.5, "unloading_rate_tph": 300, "initial_stock_t": 600,  "holding_cost_per_ton_period_local": 615},
+    {"name": "Port_I", "lat": -1.0, "lon": 131.2, "annual_demand_t": 51000,  "silo_capacity_t": 12000, "berth_depth_m": 11.3, "unloading_rate_tph": 300, "initial_stock_t": 2200, "holding_cost_per_ton_period_local": 725}
+  ],
+  "vessels": [
+    {"id": "V1", "payload_t": 7000, "gross_tonnage": 4700, "dwt": 7300, "hp_me": 3750, "hp_ae": 940, "draft_m": 7.2, "speed_ballast_kn": 11.0, "speed_laden_kn": 8.4},
+    {"id": "V2", "payload_t": 4000, "gross_tonnage": 2500, "dwt": 4400, "hp_me": 3550, "hp_ae": 890, "draft_m": 6.9, "speed_ballast_kn": 11.3, "speed_laden_kn": 7.9},
+    {"id": "V3", "payload_t": 3600, "gross_tonnage": 2300, "dwt": 3970, "hp_me": 3550, "hp_ae": 890, "draft_m": 4.8, "speed_ballast_kn": 12.9, "speed_laden_kn": 6.7},
+    {"id": "V4", "payload_t": 3400, "gross_tonnage": 3800, "dwt": 3680, "hp_me": 2960, "hp_ae": 740, "draft_m": 4.4, "speed_ballast_kn": 11.8, "speed_laden_kn": 8.0},
+    {"id": "V5", "payload_t": 3400, "gross_tonnage": 2100, "dwt": 3750, "hp_me": 2720, "hp_ae": 680, "draft_m": 4.6, "speed_ballast_kn": 12.2, "speed_laden_kn": 5.9},
+    {"id": "V6", "payload_t": 4000, "gross_tonnage": 2600, "dwt": 4500, "hp_me": 3750, "hp_ae": 940, "draft_m": 6.9, "speed_ballast_kn": 12.5, "speed_laden_kn": 9.0},
+    {"id": "V7", "payload_t": 6000, "gross_tonnage": 3800, "dwt": 6700, "hp_me": 3550, "hp_ae": 890, "draft_m": 5.8, "speed_ballast_kn": 12.5, "speed_laden_kn": 8.2},
+    {"id": "V8", "payload_t": 4500, "gross_tonnage": 3600, "dwt": 5460, "hp_me": 3650, "hp_ae": 910, "draft_m": 5.7, "speed_ballast_kn": 17.9, "speed_laden_kn": 11.6}
+  ]
+}
