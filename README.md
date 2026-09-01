@@ -43,7 +43,7 @@ mirp-decomposition-framework/
 Clone the repository and run Stage 1 on the synthetic instance:
 
 ```bash
-git clone https://github.com/[USERNAME]/mirp-decomposition-framework.git
+git clone https://github.com/myafiedanendra/mirp-decomposition-framework.git
 cd mirp-decomposition-framework
 python mirp_framework.py --instance data/synthetic_instance.json -k 6
 ```
