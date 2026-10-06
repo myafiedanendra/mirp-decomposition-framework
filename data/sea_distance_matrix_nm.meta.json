@@ -1,0 +1,89 @@
+{
+  "purpose": "Maritime sailing-distance matrix (nautical miles) used for all sailing times and voyage costs (Table A5 of the supplementary appendix).",
+  "unit": "nautical_miles",
+  "codes": [
+    "BRK",
+    "BT",
+    "MMJ",
+    "PL",
+    "KDR",
+    "AMB",
+    "OB",
+    "LBR",
+    "SRG",
+    "CB"
+  ],
+  "code_to_model_port": {
+    "BRK": "Biringkassi",
+    "BT": "Bitung",
+    "MMJ": "Mamuju",
+    "PL": "Palu",
+    "KDR": "Kendari",
+    "AMB": "Ambon",
+    "OB": "Oba",
+    "LBR": "Lembar",
+    "SRG": "Sorong",
+    "CB": "Celukan Bawang"
+  },
+  "csv_sha256": "fdc433907aeb90247ff5fa44add3f569cac7767d57a3437f4d3b5f4bfbc54dfe",
+  "source_sha256": "9a6a3b02cecdc3c512502960cfdc14c65de8f17d0ac96f87a45c5368a70a2b64",
+  "triangle_inequality_exceedances_logged_not_corrected": [
+    {
+      "pair": [
+        "BRK",
+        "BT"
+      ],
+      "direct_nm": 734.23,
+      "shortest_via": "MMJ",
+      "via_nm": 731.82,
+      "excess_nm": 2.41,
+      "excess_pct": 0.33
+    },
+    {
+      "pair": [
+        "BRK",
+        "OB"
+      ],
+      "direct_nm": 870.69,
+      "shortest_via": "KDR",
+      "via_nm": 853.75,
+      "excess_nm": 16.94,
+      "excess_pct": 1.98
+    },
+    {
+      "pair": [
+        "MMJ",
+        "AMB"
+      ],
+      "direct_nm": 788.58,
+      "shortest_via": "BRK",
+      "via_nm": 778.93,
+      "excess_nm": 9.65,
+      "excess_pct": 1.24
+    },
+    {
+      "pair": [
+        "MMJ",
+        "OB"
+      ],
+      "direct_nm": 730.41,
+      "shortest_via": "BT",
+      "via_nm": 727.34,
+      "excess_nm": 3.07,
+      "excess_pct": 0.42
+    },
+    {
+      "pair": [
+        "PL",
+        "KDR"
+      ],
+      "direct_nm": 711.42,
+      "shortest_via": "MMJ",
+      "via_nm": 646.33,
+      "excess_nm": 65.09,
+      "excess_pct": 10.07
+    }
+  ],
+  "source_note": "Extracted from the confidential case workbook, which is not distributed. source_sha256 identifies that workbook for provenance only.",
+  "values_policy": "Values used exactly as recorded: symmetric, zero diagonal, no shortest-path closure, no averaging, no imputation."
+}

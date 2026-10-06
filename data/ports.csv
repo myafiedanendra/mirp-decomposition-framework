@@ -1,0 +1,11 @@
+port,role,annual_demand_t,silo_capacity_t,max_vessel_draft_m,unloading_rate_t_per_h,loading_rate_t_per_h,initial_inventory_t,holding_cost_rp_per_t_per_day
+Biringkassi,origin,,20000,,,1500,,
+Bitung,destination,69822,12000,10.5,300,,1900,705.48
+Mamuju,destination,9021,4000,10.0,300,,400,705.48
+Palu,destination,338083,8000,10.0,300,,300,705.48
+Kendari,destination,145158,12000,10.0,300,,2000,705.48
+Ambon,destination,12205,8000,9.2,300,,2000,624.66
+Oba,destination,80930,6000,9.0,300,,725,624.66
+Celukan Bawang,destination,129014,12000,9.6,100,,1000,621.92
+Lembar,destination,61222,5000,11.5,300,,600,616.44
+Sorong,destination,50551,12000,11.3,300,,2200,726.03

@@ -1,0 +1,30 @@
+parameter,value,unit,used_in,manuscript_reference
+planning_period_length,2,days,Stages 2-3,Section 3.2
+planning_periods_T_MAX,183,periods (t = 0..182; 366 modeled days),Stages 2-3,Section 3.2
+annual_demand_divisor,365,days,Stages 2-3 (d_p = D_p * 2 / 365),Section 3.2; Eq. (A30)
+commission_days_for_hire,350,days,Stage 2 hire Eq. (4),Section 3.2; Stopford (2009)
+exchange_rate_KURS,15857,Rp per US dollar,Stages 2-3,Section 3.2; Section 4.1
+tch_regression_slope,0.0401,US dollars per day per DWT,Stage 2 Eq. (4); Stage 3 Eq. (A21),Section 3.2; Appendix A.4
+tch_regression_intercept,18318,US dollars per day,Stage 2 Eq. (4); Stage 3 Eq. (A21),Section 3.2; Appendix A.4
+ifo_price,18600,Rp per liter,Fuel cost Eq. (A34),Appendix A.4
+mdo_price,24000,Rp per liter,Fuel cost Eq. (A34),Appendix A.4
+specific_fuel_oil_consumption,0.18,kg per HP per hour,Fuel cost Eqs. (A32)-(A33),Appendix A.4
+cargo_handling_rate_CHC,700,Rp per tonne,Stages 2-3,Section 3.2; Appendix A.4
+non_productive_time_allowance,0.10,fraction of round-trip time,Stages 1-3,Section 3.1; Appendix A.1
+stage2_unmet_demand_penalty,1225000,Rp per tonne,Stage 2 Eq. (3),Section 3.2; Appendix A.4
+stage3_shortage_and_overflow_penalty,50000000,Rp per tonne,Stage 3 Eq. (10),Section 3.3
+voyage_to_time_charter_rate_ratio_theta,1.00,dimensionless,Stage 3 Eq. (A21),Section 3.3; Appendix A.3
+holding_cost_rate,0.20,fraction of local selling price per year (see data/ports.csv for Rp per t per day),Stage 2 Eq. (3),Section 3.2; Eq. (A36)
+kmeans_restarts,20,count,Stage 1,Section 3.1; Appendix A.1
+kmeans_max_iterations,100,count,Stage 1,Appendix A.1
+kmeans_random_seed,42,,Stage 1,Appendix A.1
+stage2_time_limit,7200,seconds,Stage 2,Section 3.4
+stage3_time_limit,1200,seconds,Stage 3,Section 3.4
+relative_mip_gap,0.02,fraction,Stages 2-3,Section 3.4
+towage_unit_GT_up_to_2000,367500,Rp per call,Port charges Eq. (A35),Appendix A.4
+towage_unit_GT_2001_3500,486500,Rp per call,Port charges Eq. (A35),Appendix A.4
+towage_unit_GT_3501_8000,755000,Rp per call,Port charges Eq. (A35),Appendix A.4
+anchorage_labuh,83,Rp per GT per call,Port charges Eq. (A35),Appendix A.4
+pilotage_pandu_fixed,99500,Rp per call,Port charges Eq. (A35),Appendix A.4
+pilotage_pandu_variable,28,Rp per GT per call,Port charges Eq. (A35),Appendix A.4
+berthing_tambat,80,Rp per GT per berth-day,Port charges Eq. (A35),Appendix A.4
