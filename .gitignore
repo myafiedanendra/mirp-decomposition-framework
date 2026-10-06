@@ -1,0 +1,47 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+.venv/
+.env
+*.egg-info/
+build/
+dist/
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Solver logs and model files
+*.lp
+*.mps
+*.sol
+*.log
+
+# Raw outputs of local runs (not distributed; see README)
+OptionC_k*_SeaDist_Results/
+Stage3_SeaDist_kSweep_Charter_Schedule.xlsx
+Stage3_SeaDist_run_manifest.json
+
+# Port coordinates supplied locally (not distributed; see README)
+data/port_coordinates.csv
+
+# Confidential company records and case workbooks (never commit)
+data/confidential/
+*.xlsx
+!results/*.xlsx
+
+# Figure outputs written by figures/make_figure*.py
+figures/*.png
+figures/*.pdf
+figures/*_recomputed.csv
